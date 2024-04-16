@@ -1,13 +1,121 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Clone</title>
+    <!-- Link to Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #fbdbb3, #f1a572);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .search-bar {
+            margin-left: auto;
+        }
+        .logo img {
+            height: 90px; /* Adjust height as needed */
+            width: auto; /* Maintain aspect ratio */
+        }
+        .feature-title {
+            color: #0d5444;
+        }
+    </style>
 </head>
 <body>
-  <h1 class="text-3xl font-bold">
-    Hello world!
-  </h1>
+
+    <!-- Header section -->
+    <header>
+        <nav class="bg-transparent container mx-auto flex items-center justify-between py-4">
+            <div class="logo">
+                <a href="#"><img src="./images/Screenshot 2024-04-16 235628.png" alt="Your Logo"></a>
+            </div>
+            <ul class="flex items-center">
+                <li class="mr-4">
+                    <a href="#" class="text-gray-800 hover:text-gray-900 ml-10">Products</a>
+                </li>
+                <li class="mr-4">
+                    <a href="#" class="text-gray-800 hover:text-gray-900">Solutions</a>
+                </li>
+                <li class="mr-4">
+                  <a href="#" class="text-gray-800 hover:text-gray-900">Open Source</a>
+              </li>
+              <li class="mr-4">
+                <a href="#" class="text-gray-800 hover:text-gray-900">Pricing</a>
+            </li>
+                <!-- Add more navigation items as needed -->
+            </ul>
+            <div class="search-bar flex items-center">
+                <input type="text" placeholder="Search or jump to..." class="bg-gray-200 text-gray-800 px-4 py-2 rounded-md mr-4">
+                <div class="user-actions">
+                    <a href="#" class="text-gray-800 hover:text-gray-900 mr-4">Sign In</a>
+                    <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main class="container mx-auto px-4">
+        <section class="hero py-20">
+            <div class="container mx-auto text-center">
+                <h1 class="text-4xl font-semibold">Welcome to BEP</h1>
+                <p class="mt-4 text-lg">Best Version Control System</p>
+                <!-- Any call-to-action buttons -->
+            </div>
+        </section>
+
+        <!-- Three buttons centered -->
+        <div class="center mb-12">
+            <div class="flex justify-center">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-md mr-4 btn">Button 1</button>
+                <button class="bg-green-500 hover:bg-green-600 text-white py-3 px-6 rounded-md mr-4 btn">Button 2</button>
+                <button class="bg-red-500 hover:bg-red-600 text-white py-3 px-6 rounded-md btn">Button 3</button>
+            </div>
+        </div>
+
+        <!-- Example content related to GitHub -->
+        <section class="py-12">
+            <div class="container mx-auto">
+                <h2 class="text-2xl font-semibold mb-4">GitHub Features</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <h3 class="feature-title text-xl font-semibold mb-2">Version Control</h3>
+                        <p class="text-gray-800">Manage and track changes to your code.</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <h3 class="feature-title text-xl font-semibold mb-2">Collaboration</h3>
+                        <p class="text-gray-800">Work together with your team on projects.</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <h3 class="feature-title text-xl font-semibold mb-2">Code Hosting</h3>
+                        <p class="text-gray-800">Host your code repositories in the cloud.</p>
+                    </div>
+                    <!-- Add more features as needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="bg-transparent text-gray-100 py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Your Company</p>
+            <!-- Any footer links or social media icons -->
+        </div>
+    </footer>
+
 </body>
 </html>
