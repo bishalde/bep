@@ -1,0 +1,29 @@
+version: "3.8"
+services:
+  website:
+    build: 
+      context: ./website
+      dockerfile: Dockerfile
+    image: bepwebsite:tag
+
+    ports: 
+       - 5173:5173
+    develop:
+      watch:
+        - path: ./website/package.json
+          action: rebuild
+        - path: ./website/package-lock.json
+          action: rebuild
+        - path: ./website
+          target: /app
+          action: sync
+
+  bep:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: bep:tag
+    volumes:
+      - bep:/app
+volumes:
+  bep:

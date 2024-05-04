@@ -4,20 +4,15 @@ import logo from '/bepLogo.png'
 const data = [
     {
         "name": "Bishal De",
-        "link1": "https://github.com/Km7654",
-        "link2": "https://github.com/Km7654",
+        "link1": "https://github.com/bishalde",
+        "link2": "https://www.linkedin.com/in/bishalde/",
     },
 
     {
-        "name": "Premansh Chanderia",
-        "link1": "https://github.com/Km7654",
-        "link2": "https://github.com/Km7654",
+        "name": "Premansh Chanderiya",
+        "link1": "https://github.com/premanshc",
+        "link2": "https://github.com/premanshc",
     },
-    {
-        "name": "Kaushik Singh",
-        "link1": "https://github.com/Km7654",
-        "link2": "https://github.com/Km7654",
-    }
 ]
 
 function Contributors() {
